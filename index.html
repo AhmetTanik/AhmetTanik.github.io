@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ahmet Tanık - Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: #050816;
+      color: #f9fafb;
+    }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 16px 80px;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 16px;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+    header p {
+      margin: 0;
+      color: #9ca3af;
+    }
+
+    .tagline {
+      margin-top: 8px;
+      color: #e5e7eb;
+    }
+
+    section {
+      margin-top: 32px;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 8px;
+    }
+    .card {
+      border: 1px solid #1f2937;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #020617, #020617, #0b1120);
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+    .chip-row {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 0.8rem;
+    }
+    .chip {
+      border-radius: 999px;
+      padding: 4px 8px;
+      background: #0f172a;
+      border: 1px solid #1f2937;
+      color: #e5e7eb;
+    }
+    ul {
+      padding-left: 18px;
+      margin: 6px 0;
+    }
+    footer {
+      margin-top: 40px;
+      border-top: 1px solid #1f2937;
+      padding-top: 16px;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Ahmet Tanık</h1>
+      <p>Software Engineer · Istanbul, Türkiye</p>
+      <p class="tagline">
+        Autonomous systems, full-stack web development and data-driven products.
+      </p>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a results-oriented software engineer with experience in
+        <strong>autonomous drones</strong>, <strong>full-stack web applications</strong>,
+        and <strong>social media data analysis</strong>. I enjoy turning ideas
+        into real products and working with cross-functional teams.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Tech Stack</h2>
+      <div class="card">
+        <strong>Languages</strong><br />
+        Python, C++, C#, JavaScript (React / Node.js), SQL
+      </div>
+      <div class="card">
+        <strong>Frameworks & Tools</strong><br />
+        React, Node.js, Express, MongoDB, ROS, Gazebo, Unity, Docker, Git, GitHub Actions
+      </div>
+      <div class="card">
+        <strong>Data & ML</strong><br />
+        Pandas, NumPy, Scikit-Learn
+      </div>
+      <div class="card">
+        <strong>Cloud</strong><br />
+        AWS (EC2, RDS, S3)
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="card">
+        <h3>Autonomous Drone Navigation System</h3>
+        <p>
+          Python/ROS-based autonomous quadcopter navigation with sensor fusion,
+          obstacle detection and path planning in Gazebo simulation.
+        </p>
+        <ul>
+          <li>Designed modular architecture for control, perception and planning.</li>
+          <li>Tested multiple control strategies to reduce path deviation.</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">Python</span>
+          <span class="chip">ROS</span>
+          <span class="chip">Gazebo</span>
+          <span class="chip">Autonomous Systems</span>
+        </div>
+        <!-- Ayrı repo açınca aşağıdaki linki güncelleyebilirsin -->
+        <p>
+          🔗 <a href="https://github.com/AhmetTanik/technical-projects" target="_blank">
+          View code on GitHub</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Event Management Web Application</h3>
+        <p>
+          Full-stack web app for university clubs to create events, manage
+          registrations and send automated reminders.
+        </p>
+        <ul>
+          <li>Built with React (frontend) and Node.js/Express (backend).</li>
+          <li>Designed REST API and MongoDB schema for events and users.</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">MongoDB</span>
+        </div>
+        <p>
+          🔗 <a href="https://github.com/AhmetTanik/technical-projects" target="_blank">
+          View code on GitHub</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Social Media Data Analysis & ML Model</h3>
+        <p>
+          Data analysis and regression model on TikTok metrics to predict views
+          and engagement based on posting time, hashtags and content type.
+        </p>
+        <ul>
+          <li>Cleaned and explored real channel metrics using Pandas.</li>
+          <li>Trained regression model with Scikit-Learn.</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">Python</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">Scikit-Learn</span>
+          <span class="chip">Data Analysis</span>
+        </div>
+        <p>
+          🔗 <a href="https://github.com/AhmetTanik/technical-projects" target="_blank">
+          View code on GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        📧 <a href="mailto:ahmettanik3@gmail.com">ahmettanik3@gmail.com</a><br />
+        💼 <a href="https://www.linkedin.com/in/ahmettanik1" target="_blank">
+        linkedin.com/in/ahmettanik1</a><br />
+        🐙 <a href="https://github.com/AhmetTanik" target="_blank">
+        github.com/AhmetTanik</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Ahmet Tanık · Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
